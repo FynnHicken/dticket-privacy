@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Datenschutzerklärung – D-Ticket Wallet</title>
+    <style>
+        :root {
+            --bg-color: #f8fafc;
+            --card-bg: #ffffff;
+            --text-main: #0f172a;
+            --text-muted: #475569;
+            --accent: #0f3c5f;
+            --accent-light: #e0f2fe;
+            --border: #e2e8f0;
+        }
+        @media (prefers-color-scheme: dark) {
+            :root {
+                --bg-color: #0b1120;
+                --card-bg: #1e293b;
+                --text-main: #f8fafc;
+                --text-muted: #94a3b8;
+                --accent: #38bdf8;
+                --accent-light: #0c4a6e;
+                --border: #334155;
+            }
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 760px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 18px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            border: 1px solid var(--border);
+        }
+        .badge {
+            display: inline-block;
+            background-color: var(--accent-light);
+            color: var(--accent);
+            padding: 6px 14px;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            margin-bottom: 16px;
+        }
+        h1 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 8px;
+            color: var(--text-main);
+        }
+        .subtitle {
+            color: var(--text-muted);
+            margin-bottom: 28px;
+            font-size: 1.05rem;
+        }
+        h2 {
+            font-size: 1.25rem;
+            margin-top: 28px;
+            margin-bottom: 12px;
+            color: var(--text-main);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 6px;
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 0.98rem;
+        }
+        ul {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 8px;
+        }
+        .highlight-box {
+            background-color: var(--accent-light);
+            border-left: 4px solid var(--accent);
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .highlight-box p {
+            margin: 0;
+            color: var(--text-main);
+            font-weight: 500;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid var(--border);
+            font-size: 0.85rem;
+            color: var(--text-muted);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span class="badge">100% Offline & Privat</span>
+        <h1>Datenschutzerklärung</h1>
+        <p class="subtitle">für die iOS-App <strong>D-Ticket Wallet</strong> (Stand: November 2026)</p>
+
+        <div class="highlight-box">
+            <p>Kurzfassung: Diese App funktioniert zu 100 % offline. Es gibt keine Server, keine Analyse-Tools, kein Tracking und keine Weitergabe von Daten. Ihre Daten verlassen Ihr iPhone zu keinem Zeitpunkt.</p>
+        </div>
+
+        <h2>1. Verantwortlicher</h2>
+        <p>Verantwortlich für die Datenverarbeitung im Sinne der Datenschutz-Grundverordnung (DSGVO):</p>
+        <p>
+            <strong>Fynn Hicken</strong><br>
+            E-Mail: <a href="mailto:fynn.hicken@gmail.com" style="color: var(--accent);">fynn.hicken@gmail.com</a>
+        </p>
+
+        <h2>2. Grundprinzip: Lokale On-Device-Verarbeitung</h2>
+        <p>Die App „D-Ticket Wallet“ wurde nach den Prinzipien „Privacy by Design“ und „Privacy by Default“ entwickelt:</p>
+        <ul>
+            <li><strong>Keine Internetverbindung:</strong> Die Kernfunktionen der App (Bildanalyse, Barcode-Extraktion, Pass-Erstellung und Signierung) benötigen und verwenden keine Netzwerkverbindung.</li>
+            <li><strong>Keine Server:</strong> Wir betreiben keine Backend-Server, Datenbanken oder Cloud-Dienste zur Speicherung Ihrer Daten.</li>
+            <li><strong>Kein Tracking:</strong> Es sind keinerlei Tracking-Bibliotheken, Analysedienste (z. B. Firebase, Google Analytics) oder Werbenetzwerke in der App eingebunden.</li>
+            <li><strong>Keine Registrierung:</strong> Zur Nutzung der App ist kein Benutzerkonto erforderlich.</li>
+        </ul>
+
+        <h2>3. Zugriff auf Fotos und Bildverarbeitung</h2>
+        <p>Um einen Barcode aus Ihrem Ticket zu lesen, fordert die App Zugriff auf die von Ihnen ausgewählten Fotos:</p>
+        <ul>
+            <li>Der Fotozugriff erfolgt über den sicheren, systemeigenen Bildauswahldialog von iOS (<code>PhotosPicker</code>). Die App erhält ausschließlich Zugriff auf das eine Foto, das Sie aktiv auswählen.</li>
+            <li>Die optische Erkennung (OCR) und das Dekodieren des Aztec-Barcodes erfolgen ausschließlich im lokalen Arbeitsspeicher Ihres iPhones mithilfe der Apple-Systemframeworks <em>Vision</em> und <em>CoreImage</em>.</li>
+            <li>Das Foto wird nicht dauerhaft in der App gespeichert und unmittelbar nach dem Auslesen aus dem flüchtigen Speicher verworfen.</li>
+        </ul>
+
+        <h2>4. Erstellung und Signierung des Apple Wallet Passes</h2>
+        <p>Die Umwandlung der Ticketdaten in eine Pass-Datei (<code>.pkpass</code>) sowie die kryptografische Signierung (PKCS#7 / CMS) erfolgen vollständig auf Ihrem Gerät:</p>
+        <ul>
+            <li>Die erstellte Pass-Datei wird über die offizielle PassKit-Schnittstelle von Apple direkt in Ihre persönliche Apple Wallet App importiert.</li>
+            <li>Ihre Passdaten (Name, Ticket-ID, Gültigkeitszeitraum) liegen ausschließlich lokal in Ihrer Apple Wallet und unterliegen Apples Sicherheits- und Datenschutzbestimmungen für Apple Pay & Wallet.</li>
+        </ul>
+
+        <h2>5. Rechtsgrundlage der Verarbeitung</h2>
+        <p>Rechtsgrundlage für die temporäre lokale Verarbeitung der Daten auf Ihrem Endgerät ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung bzw. Erbringung der vom Nutzer gewünschten Funktion der Passerstellung) sowie Ihre ausdrückliche Handlung beim Auswählen des Screenshots (Art. 6 Abs. 1 lit. a DSGVO).</p>
+
+        <h2>6. Rechte der Betroffenen</h2>
+        <p>Da wir keine personenbezogenen Daten auf externen Servern speichern oder verarbeiten, liegen bei uns keine personenbezogenen Daten vor, die eingesehen, berichtigt, gesperrt oder gelöscht werden könnten. Sie haben jederzeit die vollständige Kontrolle über Ihre Daten:</p>
+        <ul>
+            <li>Erstellte Pässe können Sie jederzeit direkt in der Apple Wallet App entfernen.</li>
+            <li>Durch Deinstallation der App werden alle zugehörigen temporären Cache-Dateien vollständig von Ihrem iPhone gelöscht.</li>
+        </ul>
+
+        <h2>7. Änderungen dieser Datenschutzerklärung</h2>
+        <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, falls sich der Funktionsumfang der App oder gesetzliche Vorgaben ändern. Die aktuelle Version ist stets in der App und unter dieser URL abrufbar.</p>
+
+        <div class="footer">
+            <p>&copy; 2026 Fynn Hicken &bull; D-Ticket Wallet</p>
+        </div>
+    </div>
+</body>
+</html>
